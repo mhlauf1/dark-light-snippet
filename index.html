@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Snipets Dark and Light Animation Toggle</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <button aria-pressed="false">
+        <span class="sr-only">Toggle Dark Mode</span>
+        <span class="sun-and-moon">
+            <span class="rays">
+                <span class="ray" style="--index: 0; --entry: 0; --exit: 1;"></span>
+                <span class="ray" style="--index: 1; --entry: 1; --exit: 2;"></span>
+                <span class="ray" style="--index: 2; --entry: 0; --exit: 3;"></span>
+                <span class="ray" style="--index: 3; --entry: 1; --exit: 4;"></span>
+                <span class="ray" style="--index: 4; --entry: 0; --exit: 3;"></span>
+                <span class="ray" style="--index: 5; --entry: 1; --exit: 2;"></span>
+                <span class="ray" style="--index: 6; --entry: 0; --exit: 1;"></span>
+                <span class="ray" style="--index: 7; --entry: 1; --exit: 0;"></span>
+            </span>
+            <span class="star" style="--index: 0;"></span>
+            <span class="star" style="--index: 1;"></span>
+            <span class="body"></span>
+        </span>
+    </button>
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
